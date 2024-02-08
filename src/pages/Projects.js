@@ -5,8 +5,6 @@ import { ProjectList } from "../utils/ProjectDetails";
 import Title from "../utils/Title";
 
 const Project = () => {
-  const Labels = ["All", "Client", "Personal"];
-  const [activeLabel, setActiveLabel] = useState(Labels[0]);
   const [projects, setProjects] = useState(ProjectList);
   const ref = useRef(null);
   const isInView = useInView(ref);

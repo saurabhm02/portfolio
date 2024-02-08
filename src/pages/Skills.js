@@ -5,7 +5,6 @@ import {
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiGit,
 } from "react-icons/di";
 import {
   SiFirebase,

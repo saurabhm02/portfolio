@@ -1,5 +1,3 @@
-import { Link as ScrollLink } from "react-scroll";
-import { animateScroll  } from 'react-scroll';
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";

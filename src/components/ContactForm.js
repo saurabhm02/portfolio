@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import Button from "../utils/Button";
 import { BiMailSend } from "react-icons/bi";
 import emailjs, { sendForm } from "@emailjs/browser";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
@@ -11,7 +10,6 @@ const ContactForm = () => {
   const [msg, setMsg] = useState(null);
   const form = useRef();
   const ref = useRef();
-  const serviceId = process.env.REACT_APP_TEMPLATE_ID;
   const successText = (
     <>
       <h1 className="text-center font-semibold text-lg md:text-xl">
@@ -36,10 +34,10 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       await emailjs.sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        "service_pbx83km",
+        "template_k3kykrq",
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_ID,
+        "ZdaU7tRXMXaYtDz3r",
       );
       setMsg(successText);
       console.log("Message sent successfully");
@@ -53,9 +51,6 @@ const ContactForm = () => {
     }
   };
 
-  console.log(serviceId);
-console.log(process.env.REACT_APP_TEMPLATE_ID);
-console.log(process.env.REACT_APP_EMAILJS_PUBLIC_ID);
 
   const variants = {
     hidden: { opacity: 0, y: 20 },
