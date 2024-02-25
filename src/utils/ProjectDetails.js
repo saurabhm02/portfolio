@@ -29,8 +29,8 @@ import {
       name: "Personal Portfolio",
       image: PortfolioLogo,
       skills: ["React,React Router, CSS"],
-      codeLink: "https://github.com/Saurabh-8585/Saurabh-Dev",
-      demoLink: "https://saurabhkhatmode.netlify.app/",
+      codeLink: "https://github.com/saurabhm02",
+      demoLink: "https://saurabhm02.vercel.app",
       info: "I created a personal portfolio website using React JS, HTML, and CSS to showcase my projects, skills,[ and background.] The website serves as a platform for people to learn more about me and my professional accomplishments.My portfolio features information about my education, work experience, and technical skills,[ as well as a section highlighting my completed] projects. Overall, my portfolio serves as a valuable asset in advancing my career and achieving my professional goals.",
     },
     {
